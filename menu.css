@@ -1,0 +1,170 @@
+.body-meniu{
+    width: 100%;
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    background: linear-gradient(to bottom, #00cc66, #00aaff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: fit-content;
+}
+
+.mancare-meniu{
+    width: 130px;
+    height: 100px;
+    object-fit: contain;
+    opacity: 0.82;
+}
+
+#salata-img{
+    width: 130px;
+    height: 100px;
+    object-fit: contain;
+    opacity: 0.82;
+    position: absolute;
+    top: 540px;
+    right: -1%;
+}
+
+.mancare-meniu:nth-child(1){
+    position: absolute;
+    top: 300px;
+    right: -1%;
+}
+.mancare-meniu:nth-child(2){
+    position: absolute;
+    top: 460px;
+    left: 0%;
+}
+.mancare-meniu:nth-child(3){
+    position: absolute;
+    top: 600px;
+    right: 0%;
+}
+.mancare-meniu:nth-child(4){
+    position: absolute;
+    top: 815px;
+    left: -2%;
+}
+.mancare-meniu:nth-child(5){
+    position: absolute;
+    top: 1060px;
+    right: 0%;
+}
+.mancare-meniu:nth-child(6){
+    position: absolute;
+    top: 1300px;
+    left: 0%;
+}
+
+.mancare-meniu:nth-child(7){
+    position: absolute;
+    top: 1450px;
+    right: 0%;
+}
+.mancare-meniu:nth-child(8){
+    position: absolute;
+    top: 1620px;
+    left: 2px;
+}
+
+
+.container-livrari{
+    position: relative;
+    width: 100%;
+    height: 170px;
+}
+.container-livrari img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+.text-livrari{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.selector-meniu{
+    width: 90%;
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    overflow-x: scroll;
+    scroll-snap-type:x mandatory;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    height: fit-content;
+    position: relative;
+    z-index: 10;
+}
+.selector-meniu::-webkit-scrollbar{
+    display: none;
+}
+.item-selector-meniu{
+    min-width: 115px;
+    text-align: center;
+    border: 2px solid white;
+    background-color: black;
+    font-weight: bold;
+    padding: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 26px;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    height: fit-content;
+    opacity: 0.5;
+    transition: all 500ms ease-in-out;
+}
+.item-selector-meniu.current-menu{
+    opacity: 1;
+}
+.container-content-meniu{
+    position: relative;
+    width: 90%;
+    margin-bottom: 40px;
+    z-index: 10;
+    transition: height 400ms ease-in-out;
+}
+.content-meniu{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 14px;
+    width: 95%;
+    height:min-content;
+    font-size: 17px;
+    line-height: 25px;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+.titlu-produs{
+    font-weight: bold;
+    font-size: 19px;
+}
+
+#FirstMenu{
+    opacity: 1;
+}
+#Portie{
+    font-size: 30px;
+    font-weight: bold;
+}
